@@ -1,0 +1,32 @@
+#heading{
+    margin-left: 100px;
+}
+#tictacgame{
+    margin-left: 70px;
+}
+#restartgame{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.grid-container1 {
+    content: "";
+    display: table;
+    clear: both;
+}
+#playerturn{
+    font-size: 50px;
+    color:green;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#grid-item1,#grid-item2,#grid-item3,#grid-item4,#grid-item5,#grid-item6,#grid-item7,#grid-item8,#grid-item9 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+    float: left;
+    width: 50px;
+    padding: 10px;
+}
