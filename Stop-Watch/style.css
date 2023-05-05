@@ -1,0 +1,37 @@
+#mainDiv{
+    margin-top: 200px;
+    margin-left: 500px;
+    padding: 60px;
+    width: 400px;
+    text-align: center;
+    background-color: rgb(14, 117, 0);
+}
+#stopWatchHeading{
+    font-size: 30px;
+    color: rgb(162, 255, 154);
+}
+#hr,#min,#sec,#count{
+    font-size: 75px;
+    color: white;
+}
+#stopWatch{
+    color: wheat;
+}
+#startButton{
+    background-color: rgb(0, 198, 109);
+    width: 70px;
+    color: white;
+    height: 30px;
+}
+#stopButton{
+    background-color: rgb(0, 96, 170);
+    width: 70px;
+    color: white;
+    height: 30px;
+}
+#restartButton{
+    background-color: rgb(214, 0, 0);
+    width: 70px;
+    color: white;
+    height: 30px;
+}
