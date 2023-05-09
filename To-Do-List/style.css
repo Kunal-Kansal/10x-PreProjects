@@ -1,0 +1,20 @@
+#mainHead{
+    height: 60px;
+    background-color: green;
+    font-size: 50px;
+    padding : 30px;
+    padding-left: 40px;
+}
+#addItems{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+#addItemsInput{
+    height: 30px;
+    font-size: 15px;
+    border-color: rgb(230, 228, 228);
+    padding-left: 15px;
+    width: 300px;
+    margin-left: 50px;
+}
