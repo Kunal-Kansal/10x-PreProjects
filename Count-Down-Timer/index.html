@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>Hour : </label>
+            <input type="text" id="hour" placeholder="00" maxlength="2" />
+        </div>
+        <div>
+            <label>Minutes : </label>
+            <input type="text" id="minutes" placeholder="00" maxlength="2" />
+        </div>
+        <div>
+            <label>Seconds : </label>
+            <input type="text" id="seconds" placeholder="00" maxlength="2" />
+        </div>
+        <button id="startButton" onclick="changeTimer()">START</button>
+        <div id="countDownTimer">
+            <span id="countDownHr">00</span> :
+            <span id="countDownMin">00</span> :
+            <span id="countDownSec">00</span>
+        </div>
+        <button id="stopButton" onclick="countTimerStop()" >STOP</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
