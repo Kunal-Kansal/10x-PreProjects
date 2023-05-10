@@ -4,6 +4,7 @@ let seconds = document.getElementById("seconds")
 let countDownHr = document.getElementById("countDownHr")
 let countDownMin = document.getElementById("countDownMin")
 let countDownSec = document.getElementById("countDownSec")
+let finalTimer = document.getElementById("finalTimer")
 
 const countTimerStart = ()=>{
     if(countDownHr.innerHTML != "00" 
@@ -15,9 +16,15 @@ const countTimerStart = ()=>{
                 countDownSec.innerHTML = "0" + countDownSec.innerHTML
             }
         }
+        if(countDownHr.innerHTML == "00" && countDownMin.innerHTML == "00" && countDownSec.innerHTML <= 5){
+            finalTimer.innerHTML = parseInt(countDownSec.innerHTML)
+        }
+        if(countDownHr.innerHTML == "00" && countDownMin.innerHTML == "00" && countDownSec.innerHTML == 0){
+            finalTimer.innerHTML = "TIME OVER"
+        }
         if(countDownSec.innerHTML == "00" && countDownMin.innerHTML > "00"){
             countDownMin.innerHTML--
-            countDownSec.innerHTML = "59"
+            countDownSec.innerHTML = "60"
             if(countDownMin.innerHTML < 10){
                 countDownMin.innerHTML = "0" + countDownMin.innerHTML
             }
@@ -34,6 +41,9 @@ const countTimerStart = ()=>{
 }
 
 const changeTimer = ()=>{
+    countDownHr.innerHTML = "00"
+    countDownMin.innerHTML = "00"
+    countDownSec.innerHTML = "00"
     if(!hour.value){hour.value = "00"}
     if(!minutes.value){minutes.value = "00"}
     if(!seconds.value){seconds.value = "00"}
@@ -46,6 +56,7 @@ const countTimerStop = () =>{
     countDownHr.innerHTML = "00"
     countDownMin.innerHTML = "00"
     countDownSec.innerHTML = "00"
+    finalTimer.innerHTML = ""
 }
 addEventListener("keypress",function(event){
     if(event.key === "Enter"){
