@@ -17,4 +17,39 @@
     padding-left: 15px;
     width: 300px;
     margin-left: 50px;
+}#addItemButton{
+    height: 35px;
+    margin-left: 0px;
+    width: 60px;
+    font-size: 20px;
+    font-style: bold;
+    color: white;
+    background-color: green;
+
+}#ToDoItems{
+    height: 20px;
+    width: 800px;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 13px;
+    border: 2px solid #c3c3c3;
+    margin-top: 20px;
+}#deleteButton{
+    display: block;
+    position: relative;
+    margin-left: 750px;
+    margin-top: -27px;
+    height: 30px;
+    width: 55px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}#edit{
+    display: block;
+    position: relative;
+    margin-left: 685px;
+    margin-top: -30px;
+    height: 30px;
+    width: 55px;
+    background-color: blue;
+    color: white;
 }
