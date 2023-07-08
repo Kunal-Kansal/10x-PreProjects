@@ -1,0 +1,61 @@
+#mainSnapShot{
+text-align: center;
+margin-top: 30px;
+}
+#snapShotHeading{
+  font-size: 50px;
+  color: rgb(11, 0, 107);
+  font-style:italic;
+  font-weight: bolder;
+}
+#SearchInput{
+  margin-top: 30px;
+  height: 40px;
+  width: 400px;
+  padding-left:20px ;
+  background-color: rgb(216, 216, 216);
+  font-size: 20px;
+}
+#SearchButton{
+  height: 47px;
+  width: 60px;
+  color: white;
+  background-color: rgb(11, 0, 107);
+}
+#navigationButton{
+  margin-top: 40px;
+}
+#Mountain{
+  margin-right: 30px;
+  height: 25px;
+  width: 90px;
+  color: white;
+  background-color: rgb(11, 0, 107);
+}
+#Beaches{
+  margin-right: 30px;
+  height: 25px;
+  width: 90px;
+  color: white;
+  background-color: rgb(11, 0, 107);
+}
+#Birds{
+  margin-right: 30px;
+  height: 25px;
+  width: 90px;
+  color: white;
+  background-color: rgb(11, 0, 107);
+}
+#Food{
+  margin-right: 30px;
+  height: 25px;
+  width: 90px;
+  color: white;
+  background-color: rgb(11, 0, 107);
+}
+#mainPicturesDiv{
+  margin-top: 35px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
