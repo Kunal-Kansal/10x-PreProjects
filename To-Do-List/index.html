@@ -20,36 +20,46 @@
             <button id="addItemButton" onclick="addItemsInputfun()">Add</button>
         </div>
         <ul id="toDoList">
-            
+
         </ul>
     </div>
     <script>
         let addItemsInput = document.getElementById("addItemsInput");
         let toDoList = document.getElementById("toDoList")
-        const deleteToDoItem = ()=>{
-            console.log("delete")
+        const deleteToDoItem = (todoid)=>{
+            console.log(todoid)
         }
         const editToDoItem = () =>{
             console.log("edit")
         }
         let arr = []
+        let num = 0
+        let j = 0
+        //     toDoList.append(arr[arr.length -1])
         const addItemsInputfun = () =>{
+            toDoList.innerHTML = ""
             let ToDoItems = document.createElement("div")
             let Delete = document.createElement("button")
-            Delete.innerHTML = "Delete"
-            Delete.id = "deleteButton"
-            Delete.addEventListener("click",deleteToDoItem)
             let Edit = document.createElement("button")
+            Delete.innerHTML = "Delete"
             Edit.innerHTML = "Edit"
-            Edit.id = "edit"
+            Delete.className = "deleteButton"
+            Edit.className = "edit"
+            ToDoItems.className = "ToDoItems"
+            ToDoItems.id = j.toString()
+            Delete.addEventListener("click",deleteToDoItem,ToDoItems.id)
             Edit.addEventListener("click",editToDoItem);
-            ToDoItems.id = "ToDoItems"
-            ToDoItems.innerHTML = addItemsInput.value
-            ToDoItems.append(Delete)
-            ToDoItems.append(Edit)
-            arr.push(ToDoItems)
-            addItemsInput.value = ""
-            toDoList.append(arr[arr.length -1]) 
+            if(addItemsInput.value != ""){
+                ToDoItems.innerHTML = addItemsInput.value
+                ToDoItems.append(Delete)
+                ToDoItems.append(Edit)     
+                arr.push(ToDoItems)
+                addItemsInput.value = ""
+                j++
+            }
+            for(let i = 0 ; i < arr.length ;i++){
+                toDoList.append(arr[i])
+            }
         }
     </script>
 </body>

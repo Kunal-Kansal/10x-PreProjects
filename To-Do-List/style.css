@@ -26,7 +26,7 @@
     color: white;
     background-color: green;
 
-}#ToDoItems{
+}.ToDoItems{
     height: 20px;
     width: 800px;
     font-size: 20px;
@@ -34,7 +34,7 @@
     padding: 13px;
     border: 2px solid #c3c3c3;
     margin-top: 20px;
-}#deleteButton{
+}.deleteButton{
     display: block;
     position: relative;
     margin-left: 750px;
@@ -43,7 +43,7 @@
     width: 55px;
     background-color: rgb(255, 0, 0);
     color: white;
-}#edit{
+}.edit{
     display: block;
     position: relative;
     margin-left: 685px;
